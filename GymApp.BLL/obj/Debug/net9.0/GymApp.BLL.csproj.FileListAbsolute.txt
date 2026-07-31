@@ -1,0 +1,15 @@
+D:\programming\Route\MVC\GymApp\GymApp.BLL\bin\Debug\net9.0\GymApp.BLL.deps.json
+D:\programming\Route\MVC\GymApp\GymApp.BLL\bin\Debug\net9.0\GymApp.BLL.dll
+D:\programming\Route\MVC\GymApp\GymApp.BLL\bin\Debug\net9.0\GymApp.BLL.pdb
+D:\programming\Route\MVC\GymApp\GymApp.BLL\bin\Debug\net9.0\GymApp.DAL.dll
+D:\programming\Route\MVC\GymApp\GymApp.BLL\bin\Debug\net9.0\GymApp.DAL.pdb
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.csproj.AssemblyReference.cache
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.AssemblyInfoInputs.cache
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.AssemblyInfo.cs
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.csproj.CoreCompileInputs.cache
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.csproj.Up2Date
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.dll
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\refint\GymApp.BLL.dll
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.pdb
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\ref\GymApp.BLL.dll

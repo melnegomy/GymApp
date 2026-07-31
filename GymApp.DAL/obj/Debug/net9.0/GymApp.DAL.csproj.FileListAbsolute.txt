@@ -1,0 +1,14 @@
+D:\programming\Route\MVC\GymApp\GymApp.DAL\bin\Debug\net9.0\GymApp.DAL.deps.json
+D:\programming\Route\MVC\GymApp\GymApp.DAL\bin\Debug\net9.0\GymApp.DAL.runtimeconfig.json
+D:\programming\Route\MVC\GymApp\GymApp.DAL\bin\Debug\net9.0\GymApp.DAL.dll
+D:\programming\Route\MVC\GymApp\GymApp.DAL\bin\Debug\net9.0\GymApp.DAL.pdb
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.csproj.AssemblyReference.cache
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.AssemblyInfoInputs.cache
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.AssemblyInfo.cs
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.csproj.CoreCompileInputs.cache
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.dll
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\refint\GymApp.DAL.dll
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.pdb
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.genruntimeconfig.cache
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\ref\GymApp.DAL.dll
