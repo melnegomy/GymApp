@@ -1,6 +1,7 @@
 ﻿using GymApp.BLL.Contracts;
 using GymApp.DAL.Contracts;
 using GymApp.DAL.Models;
+using GymApp.DAL.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 namespace GymApp.BLL.Services;
 
@@ -25,4 +26,22 @@ public class PlansService : IPlansService
         return await _plansRepository.GetByIdAsync(id, trackChanges: false, cancellationToken: cancellationToken);
     }
 
+    public Task UpdateAsync(Plan plan, CancellationToken cancellationToken)
+    {
+        return _plansRepository.UpdateAsync(plan, cancellationToken);
+    }
+
+    public async Task<bool> IsActiveAsync(int id, CancellationToken cancellationToken)
+    {
+        var plan = await _plansRepository.GetByIdAsync(id, trackChanges: true, cancellationToken: cancellationToken);
+
+        if (plan == null)
+            return false;
+
+        plan.IsActive = !plan.IsActive;
+
+        await _plansRepository.UpdateAsync(plan, cancellationToken);
+
+        return true;
+    }
 }

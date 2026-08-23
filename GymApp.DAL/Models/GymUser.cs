@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GymApp.DAL.Models;
 
-public class GymUser : BaseEntity<int>
+public class GymUser : BaseEntity
 {
     
     public string Name { get; set; } = default!;

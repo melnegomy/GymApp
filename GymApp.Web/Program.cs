@@ -22,6 +22,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IPlansService, PlansService>();
 builder.Services.AddScoped<IMemberService, MemberService>();
+builder.Services.AddScoped<ITrainerService, TrainerService>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 builder.Services.AddDbContext<GymDbContext>(options =>
 {

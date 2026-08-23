@@ -1,6 +1,6 @@
 ﻿namespace GymApp.DAL.Models;
 
-public class Session : BaseEntity<int>
+public class Session : BaseEntity
 {
     public string Name { get; set; } = default!;
     public string Description { get; set; } = default!;

@@ -1,4 +1,6 @@
 ﻿using GymApp.BLL.Contracts;
+using GymApp.BLL.Services;
+using GymApp.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace GymApp.Web.Controllers
@@ -29,6 +31,43 @@ namespace GymApp.Web.Controllers
             if (plan == null)
                 return RedirectToAction(nameof(Index));
             return View(plan);
+        }
+
+        // Edit : baseURL/Plans/Edit/id
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id, CancellationToken cancellationToken = default)
+        {
+            var plan = await _services.GetByIdAsync(id, cancellationToken);
+            if (plan == null)
+                return RedirectToAction(nameof(Index));
+            return View(plan);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Plan plan, CancellationToken cancellationToken = default)
+        {
+            if (id != plan.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                await _services.UpdateAsync(plan, cancellationToken);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(plan);
+        }
+
+        // IsActive : baseURL/Plans/IsActive/id
+        [HttpPost]  
+        public async Task<IActionResult> IsActive(int id , CancellationToken cancellationToken)
+        {
+            var result = await _services.IsActiveAsync(id, cancellationToken);
+
+            if (result)
+                TempData["SuccessMessage"] = "Plan status changed successfully!";
+            else
+                TempData["ErrorMessage"] = "Failed to change plan status.";
+
+            return RedirectToAction(nameof(Index));
         }
 
     }

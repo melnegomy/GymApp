@@ -1,6 +1,6 @@
 ﻿namespace GymApp.DAL.Models;
 
-public class Booking : BaseEntity<int>
+public class Booking : BaseEntity
 {
     public int MemberId { get; set; }
     public Member Member { get; set; } = default!;

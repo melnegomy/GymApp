@@ -15,6 +15,6 @@ public class HealthRecordViewModel
     public string BloodType { get; set; } = default!;
     [StringLength(250, ErrorMessage = "Note must be between 0 and 250")]
 
-    public string Note { get; set; } = default!;
+    public string? Note { get; set; } = default!;
 
 }

@@ -13,3 +13,4 @@ D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.dll
 D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\refint\GymApp.BLL.dll
 D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.pdb
 D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\ref\GymApp.BLL.dll
+D:\programming\Route\MVC\GymApp\GymApp.BLL\obj\Debug\net9.0\GymApp.BLL.sourcelink.json

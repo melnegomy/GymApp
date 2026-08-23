@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\programming\\Route\\MVC\\GymApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|solutionrelative:gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,102 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Members\\Index.cshtml",
-              "RelativeDocumentMoniker": "GymApp.Web\\Views\\Members\\Index.cshtml",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Members\\Index.cshtml*",
-              "RelativeToolTip": "GymApp.Web\\Views\\Members\\Index.cshtml*",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T15:24:05.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GymApp.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GymApp.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFIAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T15:22:49.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "GymApp.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "GymApp.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T15:21:04.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T15:03:43.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MemberService.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
-              "RelativeDocumentMoniker": "GymApp.BLL\\Services\\MemberService.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
-              "RelativeToolTip": "GymApp.BLL\\Services\\MemberService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wDUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T15:03:27.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "GymApp.Web\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "GymApp.Web\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T13:35:19.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Members\\Create.cshtml",
-              "RelativeDocumentMoniker": "GymApp.Web\\Views\\Members\\Create.cshtml",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Views\\Members\\Create.cshtml",
-              "RelativeToolTip": "GymApp.Web\\Views\\Members\\Create.cshtml",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T13:22:57.471Z",
-              "EditorCaption": ""
             }
           ]
         }

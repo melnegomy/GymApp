@@ -17,8 +17,7 @@ public class MemberRepository : GenericRepository<Member>, IMemberRepository
         
     }
 
-    public Task<bool> AnyAsync(Expression<Func<Member, bool>> prediacate, CancellationToken cancellationToken = default)
-        => _context.Members.AnyAsync(prediacate, cancellationToken);
+    
 
     public Task<bool> EmailExistsAsync(string email, CancellationToken cancellationToken = default)
         => _context.Members.AnyAsync(m => m.Email == email, cancellationToken);

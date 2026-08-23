@@ -3,8 +3,12 @@
 public interface IMemberService
 {
      Task<IEnumerable<MemberViewModel>> GetAllMembersAsync(CancellationToken cancellationToken = default);
-     Task<bool> CreateMemberAsync(  CreateMemberViewModel createMemberViewModel,CancellationToken cancellationToken = default);
-
+     Task<bool> CreateMemberAsync(  MemberCreateViewModel createMemberViewModel,CancellationToken cancellationToken = default);
+    Task<MemberDetailsViewModel?> GetMemberDetailsAsync(int id, CancellationToken cancellationToken = default);
+    Task<MemberEditViewModel?> GetMemberDetailsForEditAsync(int id, CancellationToken cancellationToken = default);
+    Task<HealthRecordViewModel?> GetMemberHealthRecordDetailsAsync(int id, CancellationToken cancellationToken);
+    Task<bool> UpdateMemberAsync(int id, MemberEditViewModel memberViewModel, CancellationToken cancellationToken);
+    Task<bool> DeleteMemberAsync(int id, CancellationToken cancellationToken);
 }
 
 // DTO  is a Data Transfer Object that is used to transfer data between layers of the application.

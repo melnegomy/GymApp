@@ -1,6 +1,6 @@
 ﻿namespace GymApp.DAL.Models;
 
-public class Category : BaseEntity<int>
+public class Category : BaseEntity
 {
     public string Name { get; set; } = default!;
 

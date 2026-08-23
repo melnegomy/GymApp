@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GymApp.DAL.Models;
 
-public class MemberShip : BaseEntity<int>
+public class MemberShip : BaseEntity
 {
     public int MemberId { get; set; }
     public Member Member { get; set; } = default!;

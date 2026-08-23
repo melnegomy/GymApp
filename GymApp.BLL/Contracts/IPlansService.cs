@@ -6,5 +6,7 @@ namespace GymApp.BLL.Contracts
     {
         Task<Plan?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
         Task<IEnumerable<Plan>> PlansAsync(CancellationToken cancellationToken = default);
+        Task UpdateAsync(Plan plan, CancellationToken cancellationToken);
+        Task<bool> IsActiveAsync(int id, CancellationToken cancellationToken);
     }
 }

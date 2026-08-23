@@ -1,7 +1,7 @@
 ﻿namespace GymApp.DAL.Models
 {
     
-    public class Plan : BaseEntity<int>
+    public class Plan : BaseEntity
     {
         
         public string Name { get; set; } = null!;

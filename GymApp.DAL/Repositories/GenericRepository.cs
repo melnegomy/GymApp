@@ -1,8 +1,10 @@
-﻿namespace GymApp.DAL.Repositories;
+﻿using System.Linq.Expressions;
+
+namespace GymApp.DAL.Repositories;
 
 public class GenericRepository<TEntity> 
     : IGenericRepository<TEntity> where TEntity 
-    : BaseEntity<int>
+    : BaseEntity
 {
     protected readonly GymDbContext _context;
 
@@ -35,4 +37,16 @@ public class GenericRepository<TEntity>
         _context.Set<TEntity>().Remove(entity);
         return  await _context.SaveChangesAsync(cancellationToken);
     }
+
+    public Task<bool> AnyAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
+    {
+        return _context.Set<TEntity>().AnyAsync(predicate, cancellationToken);
+    }
+
+    public Task<TEntity?> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
+    {
+        return _context.Set<TEntity>().FirstOrDefaultAsync(predicate, cancellationToken);
+    }
+
+    
 }

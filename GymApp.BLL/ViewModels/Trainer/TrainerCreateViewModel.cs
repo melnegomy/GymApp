@@ -1,39 +1,42 @@
 ﻿using GymApp.DAL.Models.Enums;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace GymApp.BLL.ViewModels.Member;
+namespace GymApp.BLL.ViewModels.Trainer;
 
-public class CreateMemberViewModel
+public class TrainerCreateViewModel
 {
-    // Member Properties
-
     [Required(ErrorMessage = "Name is required")]
-    [RegularExpression ("^[a-zA-Z]+$",ErrorMessage ="Name can only contain letters and spaces")]
     public string Name { get; set; } = default!;
 
-    [Required(ErrorMessage ="Email is required")]
-    [EmailAddress(ErrorMessage ="Invalid email format")]
-    //[DataType(DataType.EmailAddress)]
+    [Required(ErrorMessage = "Email is required")]
+    [EmailAddress(ErrorMessage = "Invalid email format")]
     public string Email { get; set; } = default!;
 
     [Required(ErrorMessage = "Phone is required")]
     [DataType(DataType.PhoneNumber)]
+    [RegularExpression(@"^(010|011|012|015)\d{8}$", ErrorMessage = "Invalid phone number format")]
     public string Phone { get; set; } = default!;
-
-    [DataType(DataType.Date)]
-    public DateOnly DateOfBirth { get; set; }
 
     [Required(ErrorMessage = "Gender is required")]
     public Gender Gender { get; set; }
 
-    // Address Properties
+    [Required(ErrorMessage = "Date of Birth is required")]
+    [DataType(DataType.Date)]
+    public DateOnly DateOfBirth { get; set; }
+
     [Required(ErrorMessage = "BuildingNumber is required")]
     public int BuildingNumber { get; set; }
     [Required(ErrorMessage = "Street is required")]
     public string Street { get; set; } = default!;
     [Required(ErrorMessage = "City is required")]
     public string City { get; set; } = default!;
-    [Required(ErrorMessage = "HealthRecord is required")]
+    
+    [Required(ErrorMessage = "Specialization must be picked from the predefined dropdown list")]
+    public string? Specialties { get; set; } = default!;
 
-    public HealthRecordViewModel HealthRecord {  get; set; } = default!; 
 }
