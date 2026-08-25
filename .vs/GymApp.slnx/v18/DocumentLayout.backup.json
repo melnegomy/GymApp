@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\programming\\Route\\MVC\\GymApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|solutionrelative:gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.dal\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|solutionrelative:gymapp.dal\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "GymApp.DAL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "GymApp.DAL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA5wC0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T22:37:45.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Contracts\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "GymApp.DAL\\Contracts\\IGenericRepository.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Contracts\\IGenericRepository.cs",
+              "RelativeToolTip": "GymApp.DAL\\Contracts\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T22:37:00.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "GymApp.BLL\\MappingProfiles.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\MappingProfiles.cs",
+              "RelativeToolTip": "GymApp.BLL\\MappingProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T22:29:14.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "GymApp.BLL\\Services\\MemberService.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
+              "RelativeToolTip": "GymApp.BLL\\Services\\MemberService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA3wFsAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T22:27:39.861Z",
+              "EditorCaption": ""
             }
           ]
         }

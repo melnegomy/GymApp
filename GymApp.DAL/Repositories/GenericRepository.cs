@@ -20,23 +20,16 @@ public class GenericRepository<TEntity>
     public async Task<TEntity?> GetByIdAsync(int id, bool trackChanges = false, CancellationToken cancellationToken = default)
         => await _context.Set<TEntity>().FindAsync([id], cancellationToken);
     //Add 
-    public async Task<int> AddAsync(TEntity entity, CancellationToken cancellationToken = default)
-    {
-        _context.Set<TEntity>().Add(entity);
-      return  await _context.SaveChangesAsync(cancellationToken);
-    }
+    public void Add(TEntity entity, CancellationToken cancellationToken = default)
+       => _context.Set<TEntity>().Add(entity);
     //Update 
-    public async Task<int> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
-    {
-        _context.Set<TEntity>().Update(entity);
-       return await _context.SaveChangesAsync(cancellationToken);
-    }
+    public void Update(TEntity entity, CancellationToken cancellationToken = default) 
+        => _context.Set<TEntity>().Update(entity);      
     //Delete 
-    public async Task<int> DeleteAsync(TEntity entity, CancellationToken cancellationToken = default)
-    {
-        _context.Set<TEntity>().Remove(entity);
-        return  await _context.SaveChangesAsync(cancellationToken);
-    }
+    public void Delete(TEntity entity, CancellationToken cancellationToken = default)
+         => _context.Set<TEntity>().Remove(entity);
+        
+    
 
     public Task<bool> AnyAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
     {
@@ -48,5 +41,8 @@ public class GenericRepository<TEntity>
         return _context.Set<TEntity>().FirstOrDefaultAsync(predicate, cancellationToken);
     }
 
-    
+    public IQueryable<TEntity> GetQueryable()
+    {
+        return _context.Set<TEntity>();
+    }
 }

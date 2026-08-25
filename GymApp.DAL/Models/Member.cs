@@ -2,7 +2,7 @@
 
 public class Member : GymUser
 {
-    public string photo { get; set; } = default!; // URL or path to the member's photo
+    public string photo { get; set; } = string.Empty; // URL or path to the member's photo
 
     // joining date of the member from CreatedAt property of BaseEntity
 

@@ -12,17 +12,17 @@ namespace GymApp.BLL.Services;
 
 public class TrainerService : ITrainerService
 {
-    private readonly IGenericRepository<Trainer> _trainerRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public TrainerService(IGenericRepository<Trainer> trainerRepository)
+    public TrainerService(IUnitOfWork unitOfWork)
     {
-        _trainerRepository = trainerRepository;
+        _unitOfWork = unitOfWork;
     }
-
 
     public async Task<IEnumerable<TrainerViewModel>> GetTrainersAsync(CancellationToken cancellationToken)
     {
-       var trainers = await _trainerRepository.GetAllAsync(cancellationToken : cancellationToken);
+        var _trainerRepository = _unitOfWork.GetRepository<Trainer>();
+        var trainers = await _trainerRepository.GetAllAsync(cancellationToken : cancellationToken);
         var result =  trainers.Select(t => new TrainerViewModel
         {
             Id = t.Id,
@@ -35,6 +35,7 @@ public class TrainerService : ITrainerService
     }
     public async Task<bool> CreateTrainerAsync(TrainerCreateViewModel createTrainerViewModel, CancellationToken cancellationToken)
     {
+        var _trainerRepository = _unitOfWork.GetRepository<Trainer>();
         var emailExists = await _trainerRepository.AnyAsync(m => m.Email == createTrainerViewModel.Email, cancellationToken);
         var phoneExists = await _trainerRepository.AnyAsync(m => m.Phone == createTrainerViewModel.Phone, cancellationToken);
         if (emailExists || phoneExists)
@@ -57,12 +58,13 @@ public class TrainerService : ITrainerService
         };
 
 
-        return (await _trainerRepository.AddAsync(trainer, cancellationToken: cancellationToken)) > 0;
+        _trainerRepository.Add(trainer, cancellationToken: cancellationToken);
+        return (await _unitOfWork.SaveChangesAsync(cancellationToken: cancellationToken)) > 0;
     }
 
     public async Task<TrainerDetailsViewModel> GetTrainerDetailsAsync(int id, CancellationToken cancellationToken)
     {
-       var trainer = await _trainerRepository.GetByIdAsync(id, cancellationToken: cancellationToken);
+       var trainer = await _unitOfWork.GetRepository<Trainer>().GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return null;
         var trainerDetailsViewModel = new TrainerDetailsViewModel
@@ -81,7 +83,7 @@ public class TrainerService : ITrainerService
 
     public async Task<TrainerEditViewModel?> GetTrainerDetailsForEditAsync(int id,  CancellationToken cancellationToken)
     {
-       var trainer = await _trainerRepository.GetByIdAsync(id, cancellationToken: cancellationToken);
+       var trainer = await _unitOfWork.GetRepository<Trainer>().GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return null;
         return new TrainerEditViewModel
@@ -99,6 +101,7 @@ public class TrainerService : ITrainerService
 
     public async Task<bool> UpdateTrainerAsync(int id, TrainerEditViewModel trainerEditViewModel, CancellationToken cancellationToken)
     {
+        var _trainerRepository = _unitOfWork.GetRepository<Trainer>();
         var trainer = await _trainerRepository.GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return false;
@@ -117,17 +120,18 @@ public class TrainerService : ITrainerService
             City = trainerEditViewModel.City
         };
         trainer.Specialty = Enum.TryParse<Specialties>(trainerEditViewModel.Specialties, out var specialty) ? specialty : Specialties.GeneralFitness;
-
-        return (await _trainerRepository.UpdateAsync(trainer, cancellationToken: cancellationToken) > 0);
+        _trainerRepository.Update(trainer, cancellationToken: cancellationToken);
+        return (await _unitOfWork.SaveChangesAsync(cancellationToken: cancellationToken)) > 0;
     }
 
     public async Task<bool> DeleteTrainerAsync(int id, CancellationToken cancellationToken)
     {
+        var _trainerRepository = _unitOfWork.GetRepository<Trainer>();
         var trainer = await _trainerRepository.GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return false;
-        var result = (await _trainerRepository.DeleteAsync(trainer, cancellationToken: cancellationToken)) > 0;
-        return result;
+        _trainerRepository.Delete(trainer, cancellationToken: cancellationToken);
+        return (await _unitOfWork.SaveChangesAsync(cancellationToken: cancellationToken)) > 0;
 
     }
 }

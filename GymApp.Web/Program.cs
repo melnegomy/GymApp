@@ -1,9 +1,11 @@
+using GymApp.BLL;
 using GymApp.BLL.Contracts;
 using GymApp.BLL.Services;
 using GymApp.DAL.Context;
 using GymApp.DAL.Contracts;
 using GymApp.DAL.Models;
 using GymApp.DAL.Repositories;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +26,11 @@ builder.Services.AddScoped<IPlansService, PlansService>();
 builder.Services.AddScoped<IMemberService, MemberService>();
 builder.Services.AddScoped<ITrainerService, TrainerService>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<ISessionService, SessionService>();
+builder.Services.AddScoped<ISessionRepository, SessionRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+//builder.Services.AddAutoMapper(x=>x.AddProfile(new MappingProfiles()));
+builder.Services.AddAutoMapper(typeof(GymApp.BLL.AssemblyRefrence).Assembly);
 builder.Services.AddDbContext<GymDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

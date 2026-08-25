@@ -237,3 +237,4 @@ D:\programming\Route\MVC\GymApp\GymApp.Web\bin\Debug\net9.0\tr\Microsoft.CodeAna
 D:\programming\Route\MVC\GymApp\GymApp.Web\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\programming\Route\MVC\GymApp\GymApp.Web\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\programming\Route\MVC\GymApp\GymApp.Web\obj\Debug\net9.0\GymApp.Web.sourcelink.json
+D:\programming\Route\MVC\GymApp\GymApp.Web\bin\Debug\net9.0\AutoMapper.dll
