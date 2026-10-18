@@ -13,25 +13,20 @@ namespace GymApp.BLL.Services;
 public class TrainerService : ITrainerService
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
 
-    public TrainerService(IUnitOfWork unitOfWork)
+
+    public TrainerService(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     public async Task<IEnumerable<TrainerViewModel>> GetTrainersAsync(CancellationToken cancellationToken)
     {
         var _trainerRepository = _unitOfWork.GetRepository<Trainer>();
         var trainers = await _trainerRepository.GetAllAsync(cancellationToken : cancellationToken);
-        var result =  trainers.Select(t => new TrainerViewModel
-        {
-            Id = t.Id,
-            Name = t.Name,
-            Email = t.Email,
-            Phone = t.Phone,
-            Specialty = t.Specialty.ToString(),
-        }).ToList();       
-        return result;
+        return _mapper.Map<IEnumerable<Trainer>, IEnumerable<TrainerViewModel>>(trainers);
     }
     public async Task<bool> CreateTrainerAsync(TrainerCreateViewModel createTrainerViewModel, CancellationToken cancellationToken)
     {
@@ -41,23 +36,8 @@ public class TrainerService : ITrainerService
         if (emailExists || phoneExists)
             return false;
 
-        var trainer = new Trainer()
-        {
-            Name = createTrainerViewModel.Name,
-            Email = createTrainerViewModel.Email,
-            Phone = createTrainerViewModel.Phone,
-            DateOfBirth = createTrainerViewModel.DateOfBirth,
-            Gender = createTrainerViewModel.Gender,
-            Address = new Address
-            {
-                BuildingNumber = createTrainerViewModel.BuildingNumber,
-                Street = createTrainerViewModel.Street,
-                City = createTrainerViewModel.City
-            },
-            Specialty = Enum.TryParse<Specialties>(createTrainerViewModel.Specialties, out var specialty) ? specialty : Specialties.GeneralFitness
-        };
 
-
+        var trainer = _mapper.Map<TrainerCreateViewModel, Trainer>(createTrainerViewModel);
         _trainerRepository.Add(trainer, cancellationToken: cancellationToken);
         return (await _unitOfWork.SaveChangesAsync(cancellationToken: cancellationToken)) > 0;
     }
@@ -67,17 +47,7 @@ public class TrainerService : ITrainerService
        var trainer = await _unitOfWork.GetRepository<Trainer>().GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return null;
-        var trainerDetailsViewModel = new TrainerDetailsViewModel
-        {
-            Id = trainer.Id,
-            Name = trainer.Name,
-            Email = trainer.Email,
-            Phone = trainer.Phone,
-            DateOfBirth = trainer.DateOfBirth,
-            Specialty = trainer.Specialty.ToString(),
-            Address = $"{trainer.Address.BuildingNumber}, {trainer.Address.Street}, {trainer.Address.City}"
-        };
-         
+        var trainerDetailsViewModel = _mapper.Map<Trainer, TrainerDetailsViewModel>(trainer);
         return trainerDetailsViewModel;
     }
 
@@ -86,17 +56,8 @@ public class TrainerService : ITrainerService
        var trainer = await _unitOfWork.GetRepository<Trainer>().GetByIdAsync(id, cancellationToken: cancellationToken);
         if (trainer == null)
             return null;
-        return new TrainerEditViewModel
-        {
-            Name = trainer.Name,
-            Email = trainer.Email,
-            Phone = trainer.Phone,
-            BuildingNumber = trainer.Address.BuildingNumber,
-            Street = trainer.Address.Street,
-            City = trainer.Address.City,
-            Specialties = trainer.Specialty.ToString()
-        };
-        
+
+        return _mapper.Map<Trainer, TrainerEditViewModel>(trainer);
     }
 
     public async Task<bool> UpdateTrainerAsync(int id, TrainerEditViewModel trainerEditViewModel, CancellationToken cancellationToken)
@@ -111,15 +72,8 @@ public class TrainerService : ITrainerService
         if (emailExists || phoneExists)
             return false;
 
-        trainer.Email = trainerEditViewModel.Email;
-        trainer.Phone = trainerEditViewModel.Phone;
-        trainer.Address= new Address
-        {
-            BuildingNumber = trainerEditViewModel.BuildingNumber,
-            Street = trainerEditViewModel.Street,
-            City = trainerEditViewModel.City
-        };
-        trainer.Specialty = Enum.TryParse<Specialties>(trainerEditViewModel.Specialties, out var specialty) ? specialty : Specialties.GeneralFitness;
+        _mapper.Map(trainerEditViewModel, trainer);
+
         _trainerRepository.Update(trainer, cancellationToken: cancellationToken);
         return (await _unitOfWork.SaveChangesAsync(cancellationToken: cancellationToken)) > 0;
     }

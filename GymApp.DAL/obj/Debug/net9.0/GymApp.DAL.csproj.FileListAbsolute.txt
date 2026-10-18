@@ -13,3 +13,4 @@ D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.pdb
 D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.genruntimeconfig.cache
 D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\ref\GymApp.DAL.dll
 D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.sourcelink.json
+D:\programming\Route\MVC\GymApp\GymApp.DAL\obj\Debug\net9.0\GymApp.DAL.csproj.Up2Date

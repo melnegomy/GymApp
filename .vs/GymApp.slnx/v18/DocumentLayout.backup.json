@@ -3,20 +3,15 @@
   "WorkspaceRootPath": "D:\\programming\\Route\\MVC\\GymApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.bll\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8FB71B-8D6D-412F-8B1B-727296FBA3C3}|GymApp.BLL\\GymApp.BLL.csproj|solutionrelative:gymapp.bll\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.web\\controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF796B6B-706A-E937-537A-A061812D9B32}|GymApp.Web\\GymApp.Web.csproj|solutionrelative:gymapp.web\\controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|solutionrelative:gymapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|d:\\programming\\route\\mvc\\gymapp\\gymapp.dal\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0AA63C-68F3-4C74-AE04-6FA0B959FAF0}|GymApp.DAL\\GymApp.DAL.csproj|solutionrelative:gymapp.dal\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/ELNOGOMY/GymAppDb/True/SqlTable/dbo.Sessions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,53 +30,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "GymApp.DAL\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA5wC0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-25T22:37:45.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Contracts\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "GymApp.DAL\\Contracts\\IGenericRepository.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.DAL\\Contracts\\IGenericRepository.cs",
-              "RelativeToolTip": "GymApp.DAL\\Contracts\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-25T22:37:00.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MappingProfiles.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\MappingProfiles.cs",
-              "RelativeDocumentMoniker": "GymApp.BLL\\MappingProfiles.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\MappingProfiles.cs",
-              "RelativeToolTip": "GymApp.BLL\\MappingProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-25T22:29:14.445Z",
+              "Title": "dbo.Sessions [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/ELNOGOMY/GymAppDb/True/SqlTable/dbo.Sessions.sql",
+              "ToolTip": "dbo.Sessions [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-10-18T18:04:42.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MemberService.cs",
-              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
-              "RelativeDocumentMoniker": "GymApp.BLL\\Services\\MemberService.cs",
-              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\MemberService.cs",
-              "RelativeToolTip": "GymApp.BLL\\Services\\MemberService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA3wFsAAACHAAAAAAAAAA==",
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "GymApp.BLL\\Services\\SessionService.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.BLL\\Services\\SessionService.cs*",
+              "RelativeToolTip": "GymApp.BLL\\Services\\SessionService.cs*",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowDAAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-25T22:27:39.861Z",
+              "WhenOpened": "2026-10-18T17:50:09.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SessionsController.cs",
+              "DocumentMoniker": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Controllers\\SessionsController.cs",
+              "RelativeDocumentMoniker": "GymApp.Web\\Controllers\\SessionsController.cs",
+              "ToolTip": "D:\\programming\\Route\\MVC\\GymApp\\GymApp.Web\\Controllers\\SessionsController.cs",
+              "RelativeToolTip": "GymApp.Web\\Controllers\\SessionsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAnwFsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T16:05:17.117Z",
               "EditorCaption": ""
             }
           ]

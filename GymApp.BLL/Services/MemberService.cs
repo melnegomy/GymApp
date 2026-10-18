@@ -85,9 +85,7 @@ public class MemberService : IMemberService
         
         //var memberDetailsViewModel = _mapper.Map<MemberDetailsViewModel>(member);
         var memberDetailsViewModel = _mapper.ProjectTo<MemberDetailsViewModel>(
-            _unitOfWork.GetRepository<Member>().GetQueryable()).FirstOrDefault(member => member.Id == id)
-            
-        ;
+            _unitOfWork.GetRepository<Member>().GetQueryable()).FirstOrDefault(member => member.Id == id);
 
         var memberShip = await _unitOfWork.GetRepository<MemberShip>().FirstOrDefaultAsync(m => m.MemberId == memberDetailsViewModel.Id && m.EndDate > DateOnly.FromDateTime(DateTime.Now), cancellationToken: cancellationToken);
         if (memberShip is not null) 
